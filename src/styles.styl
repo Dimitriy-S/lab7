@@ -1,0 +1,57 @@
+/* Базовые стили */
+body
+  font-family Arial, sans-serif
+  margin 0
+  padding 0
+
+header
+  background #333
+  color white
+  padding 20px
+  text-align center
+
+.menu
+  display flex
+  justify-content space-around
+  list-style none
+  padding 0
+  margin 0
+
+.menu-item
+  color white
+  text-decoration none
+  padding 10px
+
+.content
+  width 1200px
+  margin 0 auto
+  padding 20px
+
+footer
+  background #333
+  color white
+  text-align center
+  padding 10px
+
+/* Медиа-запросы */
+@media (max-width: 768px)
+  .content
+    width 90%
+    margin 0 auto
+
+  .menu
+    display block
+    text-align center
+
+  .menu-item
+    display block
+    width 100%
+
+/* Сообщение для IE 10 и ниже */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+  .ie-warning
+    display block
+    background red
+    color white
+    text-align center
+    padding 10px
